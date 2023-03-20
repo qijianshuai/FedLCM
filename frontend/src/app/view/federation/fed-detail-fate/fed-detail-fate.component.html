@@ -145,9 +145,7 @@
       <tbody *ngIf="clusterlist && clusterlist.length > 0">
         <tr *ngFor="let cluster of clusterlist">
           <td class="left"  (click)="toDetail('cluster', cluster.uuid, cluster)">
-            <a *ngIf="!cluster.flag" href="javascript:void(0)">
-              {{cluster.name}}
-            </a>
+            <a *ngIf="!cluster.flag" href="javascript:void(0)"></a>
             <span *ngIf="cluster.flag" style="color: hsl(9, 92%, 50%);">
               {{cluster.name}}
             </span>
